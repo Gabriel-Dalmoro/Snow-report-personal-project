@@ -1,0 +1,53 @@
+body {
+    background: url(https://img.freepik.com/premium-vector/snow-mountain-winter-landscape-background_281368-419.jpg?w=2000);
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.title div{
+    flex: 1;
+}
+.title .icon{
+    /* position: absolute; */
+    /* top: 20px;
+    left: 20px; */
+    /* padding: 25px; */
+    flex: 1;
+}
+@media only screen and (max-width: 740px){
+    .title {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}
+
+#main-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-align: center;
+    /* margin: 25px 40px 10px 40px */
+}
+#subtitle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 0px 30px;
+}
+
+#main-body {
+    margin: 50px;
+    border: solid white 8px;
+    border-radius: 10px;
+    padding: 35px 20px;
+    /* background-color: #0000ff77; */
+    background-color: rgba(255,255,255,0.5);
+    /* opacity: 0.45; */
+}

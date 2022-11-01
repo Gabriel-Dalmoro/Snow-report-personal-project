@@ -1,0 +1,16 @@
+{
+  "name": "snow-report",
+  "version": "0.1.0",
+  "description": "Personal project based on 'project 2 guidelines' from InceptionU.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gabriel H. Dalmoro",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
