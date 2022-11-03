@@ -9,15 +9,32 @@
     <title>Snow Program</title>
 </head>
 <body>
-    <div class="title">
-        <div class="icon">
-            <i class="fa-solid fa-person-snowboarding fa-5x"></i>
+    <header>
+        <div class="icon-title">
+            <i id="icon" class="fa-solid fa-person-snowboarding fa-5x"></i>
+            <h1 id="main-title">Let's go snowboarding!</h1>
         </div>
-        <h1 id="main-title">Let's go snowboarding!</h1>
-        <div class="invisible-div"></div>
-    </div>
+        <nav class="navbar">
+            <ul class="nav-links">
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#">Projects</a></li>
+              <li class="nav-item"><a href="#">Contact</a></li>
+              <li class="nav-item"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+    </header>
         <p id="subtitle">This is a personal project to get information about snow conditions, weather and ski resorts around Alberta.</p>
     <div id="main-body">
+        <div>
+            <label for="resort">Select your preffered ski hill:</label><br>
+    <select id="resort" name="resort">
+      <option disabled selected value>Select method</option>
+      <option  value="Lake%20Louise">Lake Louise</option>
+      <option  value="Sunshine%20Village">Sunshine Village</option>
+    </select><br>
+    <h3>3 Day forecast summary:</h3>
+    <p id="summary"></p>
+        </div>
         <h3>This is a sub-title</h3>
         <p>This is a paragraph. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, iste vitae! Sapiente doloremque vel officia, sint alias ad at architecto sequi esse saepe laudantium mollitia sunt qui, non commodi sit?</p>
         <br>
@@ -29,4 +46,5 @@
         <p>This is a paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum vel quas eos dicta cumque! Adipisci est officia ut explicabo neque tempora architecto, soluta, itaque voluptatum temporibus, quod quidem corporis cumque.</p>
 </div>
 </body>
+<script src="index.js" type="module"></script>
 </html>

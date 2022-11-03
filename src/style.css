@@ -1,27 +1,58 @@
 body {
     background: url(https://img.freepik.com/premium-vector/snow-mountain-winter-landscape-background_281368-419.jpg?w=2000);
 }
-.title{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.title div{
-    flex: 1;
-}
-.title .icon{
-    /* position: absolute; */
-    /* top: 20px;
-    left: 20px; */
-    /* padding: 25px; */
-    flex: 1;
-}
+
 @media only screen and (max-width: 740px){
-    .title {
+    header {
         flex-direction: column;
         margin-top: 10px;
     }
+    .icon-title {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 0em
+    }
+    nav ul{
+        flex:auto
+    }
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-title {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    padding-left: 0px;
+
+}
+.nav-item{
+    padding: 0.8em;
+    display: box;
+    font-size: 20px;
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-family: 'Lucida Sans Bold', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-item a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-item:visited{
+    text-decoration: none;
+}
+.nav-item:hover{
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: #c5def2;
 }
 
 #main-title {
@@ -47,7 +78,5 @@ body {
     border: solid white 8px;
     border-radius: 10px;
     padding: 35px 20px;
-    /* background-color: #0000ff77; */
     background-color: rgba(255,255,255,0.5);
-    /* opacity: 0.45; */
 }
