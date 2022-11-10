@@ -1,0 +1,118 @@
+body {
+  background: url(https://img.freepik.com/premium-vector/snow-mountain-winter-landscape-background_281368-419.jpg?w=2000);
+}
+
+@media only screen and (max-width: 740px){
+  header {
+      flex-direction: column;
+      margin-top: 10px;
+  }
+  .icon-title {
+      flex-direction: column;
+      margin-top: 10px;
+      gap: 0em
+  }
+  nav ul{
+      flex:auto
+    }
+    #main-title {font-size: 40px;}
+}
+
+@media only screen and (max-width: 1055px){
+  #main-title {
+      font-size: 2rem
+    }
+  }
+
+
+header{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.icon-title {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em
+}
+nav ul{
+  display:flex;
+  list-style: none;
+  padding-left: 0px;
+
+}
+.nav-item{
+  padding: 0.8em;
+  display: box;
+  font-size: 20px;
+  box-shadow: inset 0 0 0 0 #54b3d6;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  font-family: 'Raleway', sans-serif;
+}
+.nav-item a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item:visited{
+  text-decoration: none;
+}
+.nav-item:hover{
+  box-shadow: inset 100px 0 0 0 #54b3d6;
+  color: #c5def2;
+}
+
+#main-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  /* margin: 25px 40px 10px 40px */
+}
+#subtitle {
+  display: flex;
+  justify-content: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin: 0px 30px;
+}
+
+#main-body {
+  font-family: 'Raleway', sans-serif;
+  margin: 50px;
+  border: solid white 8px;
+  border-radius: 10px;
+  padding: 35px 20px;
+  background-color: rgba(255,255,255,0.5);
+}
+
+/* .imgCarousel{
+display: flex;
+justify-content: center;
+  width: 50%;
+} */
+
+div.imgCarousel {
+  display: flex;
+justify-content: center;
+  /* width: 50%; */
+}
+
+#sbIcon{
+  text-align: center;
+  --fa-animation-iteration-count: 2;
+  margin: 25px;
+}
+
+#selectResort {
+  text-align: center;
+}
+
+#selectResort h4{
+  margin: 0;
+}
