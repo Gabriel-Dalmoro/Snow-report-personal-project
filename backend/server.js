@@ -29,4 +29,8 @@ app.get('/forecast', async (req, res) => {
   res.send(forecastData);
 });
 
+app.get('/webcam', async (req, res) => {
+  const skiWebcam = 
+})
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 src/api-cred.js
+.env
 
 # Editor directories and files
 .vscode/*

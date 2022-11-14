@@ -6,6 +6,23 @@ function SelectForecast() {
      const [resortForecast, setResortForecast] = useState()
      const [isLoading, setIsLoading] = useState(false);
     useEffect(()=>{
+      let getWebcamFromServer = async () => {
+        try {
+          if (skiResort === 'Lake Louise') {
+            let response = await fetch(`/webcam?webcamId=1294185930`);
+            let vals = await response.json()
+            console.log(vals);
+          } else if (skiResort === 'Sunshine Village') {
+            let response = await fetch(`/webcam?webcamId=1462284664`);
+            let vals = await response.json()
+            console.log(vals);
+          }
+        } catch (err) {
+          console.error(err)
+        }
+      }
+    })
+    useEffect(()=>{
       let getForecastFromServer = async () =>{
         try {
           // setIsLoading(true);
