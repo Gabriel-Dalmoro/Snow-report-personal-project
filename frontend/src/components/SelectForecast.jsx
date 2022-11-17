@@ -29,17 +29,25 @@ function SelectForecast() {
           // console.log(isLoading)
           let response = await fetch(`/forecast?resort=${skiResort}`);
           let vals = await response.json();
-          setIsLoading(false)
+          // setIsLoading(false)
           console.log(isLoading)
           return setResortForecast(vals.summary3Day);
 } catch (error) {
-  setIsLoading(false);
+  // setIsLoading(false);
   console.log(isLoading)
           console.log(error);
         }
       }
       if (skiResort) {getForecastFromServer()}
     }, [skiResort])
+    
+    const resortWebsite = () => {
+      useEffect (()=>{
+        return(skiResort === 'Lake Louise' ?  'https://www.skilouise.com/'
+        : skiResort === 'Sunshine Village' ? 'https://www.skibanff.com/'
+        : <em>no ski resort selected</em>)
+      },[skiResort])
+      }
   return (
     <>
     <div id="selectResort">
@@ -60,6 +68,8 @@ function SelectForecast() {
           <br />
           <h3>3 Day forecast summary:</h3>
           <p>{resortForecast}</p>
+          <h4>Resort website:</h4>
+          <p>{resortWebsite()}</p>
         </>
   )
   }
