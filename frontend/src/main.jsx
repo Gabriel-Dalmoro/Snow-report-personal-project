@@ -7,9 +7,7 @@ import Snowfall from 'react-snowfall'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <div style={{ height: 100%}}> */}
-    <Snowfall snowflakeCount={500} wind={[0, 0]} radius={[0.5, 4]}/>
-    {/* </div> */}
     <App />
+    <Snowfall snowflakeCount={300} wind={[0, 0]} radius={[0.5, 4]}/>
   </React.StrictMode>
 )

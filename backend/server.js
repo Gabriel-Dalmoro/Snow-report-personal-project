@@ -1,6 +1,8 @@
 import express from 'express';
 import fetch from 'node-fetch';
-import { apiKey } from '../frontend/src/api-cred.js';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const PORT = 5005;
 const app = express();
@@ -10,10 +12,12 @@ app.use(express.json());
 const options = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': apiKey,
+    'X-RapidAPI-Key': process.env.API_KEY,
     'X-RapidAPI-Host': 'ski-resort-forecast.p.rapidapi.com',
   },
 };
+
+console.log(options.headers);
 
 const getForecast = async (skiResort) => {
   const urlSafe = encodeURIComponent(skiResort);

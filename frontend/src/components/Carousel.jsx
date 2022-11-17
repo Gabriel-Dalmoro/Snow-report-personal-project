@@ -17,6 +17,15 @@ function Carousel() {
     <CCarouselItem>
       <CImage className="d-block w-100" src="/pictures/snowboardPhoto3.jpg" alt="slide 3" />
     </CCarouselItem>
+    <CCarouselItem>
+      <CImage className="d-block w-100" src="/pictures/snowboardPhoto4.jpg" alt="slide 4" />
+    </CCarouselItem>
+    <CCarouselItem>
+      <CImage className="d-block w-100" src="/pictures/snowboardPhoto5.jpg" alt="slide 5" />
+    </CCarouselItem>
+    <CCarouselItem>
+      <CImage className="d-block w-100" src="/pictures/snowboardPhoto6.jpg" alt="slide 6" />
+    </CCarouselItem>
   </CCarousel></div>
     </div>
   )

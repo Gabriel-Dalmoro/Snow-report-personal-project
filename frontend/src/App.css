@@ -1,3 +1,7 @@
+#root {
+  position: relative;
+}
+
 body {
   background: url(https://img.freepik.com/premium-vector/snow-mountain-winter-landscape-background_281368-419.jpg?w=2000);
 }
@@ -90,12 +94,6 @@ nav ul{
   padding: 35px 20px;
   background-color: rgba(255,255,255,0.5);
 }
-
-/* .imgCarousel{
-display: flex;
-justify-content: center;
-  width: 50%;
-} */
 
 #carouselContainer{
   display: flex;
