@@ -1,9 +1,30 @@
 #root {
   position: relative;
 }
+:root {
+  --background: linear-gradient(to bottom, hsl(203, 84%, 75%), hsl(203, 86%, 95%));
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+  --body-backgroud: rgba(255,255,255,0.5);
+}
+[data-theme='dark'] {
+  --background: linear-gradient(to bottom, hsl(203, 72%, 21%), hsl(229, 18%, 41%));
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+  --body-backgroud: rgba(255,255,255,0.13);
 
-body {
-  background: url(https://img.freepik.com/premium-vector/snow-mountain-winter-landscape-background_281368-419.jpg?w=2000);
+}
+html, body  {
+  background: var(--background)
+
+}
+
+.app {
+  background: var(--background);
+  color: var(--text-primary);
+  background-color: var(--body-backgroud);
 }
 
 @media only screen and (max-width: 740px){
@@ -56,7 +77,7 @@ nav ul{
 }
 .nav-item a{
   text-decoration: none;
-  color: black;
+  color: var(--text-primary);
 }
 
 .nav-item:visited{
@@ -74,6 +95,7 @@ nav ul{
   font-weight: 700;
   font-size: 3rem;
   text-align: center;
+  color: var(--text-primary);
   /* margin: 25px 40px 10px 40px */
 }
 #subtitle {
@@ -81,7 +103,7 @@ nav ul{
   justify-content: center;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
-  color: white;
+  color: var(--text-primary);
   text-align: center;
   margin: 0px 30px;
 }
@@ -92,7 +114,7 @@ nav ul{
   border: solid white 8px;
   border-radius: 10px;
   padding: 35px 20px;
-  background-color: rgba(255,255,255,0.5);
+  background-color: var(--body-backgroud);
 }
 
 #carouselContainer{

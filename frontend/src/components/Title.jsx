@@ -1,8 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPersonSnowboarding } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
+// import useLocalStorage from 'use-local-storage'
+
 
 function Title() {
+//   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+// const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
+
+// const switchTheme = () => {
+//   const newTheme = theme === 'light' ? 'dark' : 'light'
+//   setTheme(newTheme)
+// }
+
   return (
     <div>
       <script src="https://kit.fontawesome.com/83f09b8128.js" crossOrigin="anonymous"></script>
@@ -25,6 +35,9 @@ function Title() {
               <a href='#'>Blog</a>
             </li>
           </ul>
+          {/* <button onClick={switchTheme}>
+            Switch to {theme === 'light' ? 'Dark' : 'Light'} theme
+          </button> */}
         </nav>
       </header>
       <p id='subtitle'>
