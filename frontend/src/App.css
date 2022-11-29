@@ -25,6 +25,7 @@ html, body  {
   background: var(--background);
   color: var(--text-primary);
   background-color: var(--body-backgroud);
+  padding: 25px;
 }
 
 @media only screen and (max-width: 740px){
